@@ -69,7 +69,7 @@ section {
   object-fit: contain;
 }
 
-.banner .banner-content button {
+.banner .banner-content {
   color: #31A8DD;
   font-size: 1rem;
   font-weight: bold;
@@ -82,6 +82,26 @@ section {
   border-radius: 30px;
 }
 
+button {
+    color: #31A8DD;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color: transparent;
+    border-image: linear-gradient(#3BA1CD, #1572B7);
+    border-image-slice: 10;
+   /* border-radius: 30px; */
+    transition: background-color 0.3s ease;
+  }
+
+button:hover {
+    background-color: rgba(113, 163, 211, 0.246); /* azul mais escuro no hover */
+  }
+
+
+
 #course-content {
   width: 800px;
   text-align: center;
@@ -89,7 +109,14 @@ section {
 
 #course-content .modules-list {
   margin: 24px 0;
+
+
+  .module:hover {
+    background-color: rgba(198, 211, 113, 0.398); /* azul mais escuro no hover */
+  }
 }
+
+
 
 #course-content .modules-list .module {
   color: white;
@@ -100,6 +127,7 @@ section {
   padding: 16px;
   border-radius: 100px;
   box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+  transition: background-color 0.3s ease;
 }
 
 #course-content .modules-list .module span {
